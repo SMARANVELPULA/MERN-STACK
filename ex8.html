@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .macbook-ad {
+            background-color: white;
+            color: black;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            width: 100%;
+            max-width: 540px;
+            
+        }
+        
+        .new-tag {
+            color: #FF9500;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+        
+        .macbook-title {
+            font-size: 24px;
+            margin: 0;
+            margin-bottom: 10px;
+        }
+        
+        .macbook-tagline {
+            font-size: 48px;
+            font-weight: bold;
+            margin: 0;
+            margin-bottom: 5px;
+        }
+        
+        .price {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        
+        .buy-button {
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            border-radius: 25px;
+            padding: 10px 30px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .stock-price {
+    background-color: white;
+    color: black;
+    padding: 30px;
+    width: 100%;
+    max-width: 540px;
+}
+
+.stock-value {
+    font-size: 42px;
+    font-weight: bold;
+}
+
+.currency {
+    font-size: 24px;
+    color: #888;
+    margin-left: 5px;
+}
+
+.change-positive {
+    color: green;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.after-hours {
+    color: #666;
+    margin-top: 10px;
+    font-size: 20px;
+    margin-top: 15px;
+}
+
+.change-negative {
+    color: red;
+    margin-top: 15px;
+}
+
+.tweet {
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    padding: 20px;
+    color: black;
+    width: 100;
+    max-width: 1100px;
+}
+
+.handle {
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.tweet-text {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+    
+}
+
+.mention {
+    color: #1da1f2;
+}
+</style>
+</head>
+<body>
+    <div class="macbook-ad">
+        <span class="new-tag">New</span>
+        <h2 class="macbook-title">MacBook Pro</h2>
+        <h1 class="macbook-tagline">Supercharged for pros.</h1>
+        <p class="price">From $1999</p>
+        <button class="buy-button">Buy</button>
+    </div>
+
+    <div class="stock-price">
+        <span class="stock-value">1,049.61</span>
+        <span class="currency">USD</span>
+        <p class="change-positive">+18.05 (1.75%) today</p>
+        <p class="after-hours">After hours 1,048.00 <span class="change-negative">-1.61 (0.15%)</span></p>
+    </div>
+
+    <div class="tweet">
+        <p class="handle">freeCodeCamp.org @freeCodeCamp 1h</p>
+        <p class="tweet-text">As a web developer, you'll want to make your projects easy to use and navigate around.</p>
+        <p class="tweet-text">Here <span class="mention">@chp_it</span> outlines the top skills new developers should have.</p>
+    </div>
+</body>
+</html>
