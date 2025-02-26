@@ -1,0 +1,69 @@
+body {
+    font-family: sans-serif;
+    margin: 20px;
+  }
+  
+  h2 {
+    margin-top: 40px;
+    margin-bottom: 10px;
+  }
+  
+  /* 11a. Two Column Grid */
+  .grid-11a {
+    display: grid;
+    grid-template-columns: 200px 75px;
+    margin-bottom: 30px;
+    width: fit-content;
+  }
+  
+  .grid-11a .col1 {
+    background-color: lightblue;
+    padding: 10px;
+  }
+  
+  .grid-11a .col2 {
+    background-color: pink;
+    padding: 10px;
+  }
+  
+  /* 11b. Three Column Grid */
+  .grid-11b {
+    display: grid;
+    grid-template-columns: 50px 1fr 75px;
+    margin-bottom: 30px;
+    width: 100%;
+  }
+  
+  .grid-11b .col1 {
+    background-color: lightblue;
+    padding: 10px;
+  }
+  
+  .grid-11b .col2 {
+    background-color: pink;
+    padding: 10px;
+  }
+  
+  .grid-11b .col3 {
+    background-color: lightblue;
+    padding: 10px;
+  }
+  
+  /* 11c. Four Equal Column Grid */
+  .grid-11c {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px 20px;
+    background-color: #eee;
+    padding: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .grid-11c .col {
+    background-color: pink;
+    padding: 10px;
+  }
+  
+  .grid-container {
+    margin-bottom: 50px;
+  }
