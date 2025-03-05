@@ -1,0 +1,114 @@
+body {
+    font-family: 'Inter', sans-serif;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+.nav-bar {
+    height: 1.25cm;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.logo img {
+    height: 17px;
+    width: 119px;
+    padding-left: 3.7cm;
+}
+.options {
+    display: flex;
+    align-items: center;
+    padding-right: 3cm;
+    height: 100%;
+    width: 33%;
+    display: flex;
+    justify-content: space-between;
+}
+.options h4,i {
+    margin: 0 15px;
+    color: rgb(66, 66, 66);
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+}
+.options h4:hover {
+    color: rgb(56, 126, 209);
+}
+.options i:hover {
+    color: rgb(56, 126, 209);
+}
+.fa-bars {
+    display: none;
+    cursor: pointer;
+}
+.main-content{
+    margin-top: 20px;
+    height: 7cm;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main-content h1,h3{
+    margin: 4px;
+}
+.main-content h1{
+    font-weight: 500;
+    color: black;
+    font-size: 44px;
+    color: rgb(67, 67, 67);
+}
+.main-content h3{
+    font-weight: 400;
+    font-size: 20px;
+    color: rgb(155, 155, 155);
+
+}
+.cards{
+    display: flex;
+    height: 15cm;
+    width: 80%;
+    margin: 2.5cm;
+}
+.cards .card{
+    width: 33%;
+    height: 15cm;
+    margin: 10px;
+    padding: 10px;
+    display: inline;
+    justify-content: center;
+    align-items: center;
+}
+.cards .card .card-content{
+    text-align: center;
+}
+.cards .card .card-content h1{
+    font-size: 30px;
+    font-weight: 500;
+    color: rgb(67, 67, 67);
+}
+.cards .card .card-content h2{
+    font-size: 18px;
+    font-weight: 400;
+    color: rgb(155, 155, 155);
+}
+.cards .card img{
+    width: 7cm;
+    height: 3cm;
+    margin-left: 2cm;
+    margin-bottom: 1.5cm;
+    padding-right: 100px;
+    object-fit: cover;
+}
+@media (max-width: 768px) {
+    .menu h5 {
+        display: none;
+    }
+    .fa-bars {
+        display: block;
+    }
+}
