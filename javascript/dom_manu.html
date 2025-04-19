@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .highlight{
+      background-color: cadetblue;
+    }
+  </style>
+</head>
+<body>
+  <ul class="List">
+    <li>Apples</li>
+    <li>Bananas</li>
+    <li>Cherries</li>
+    <li>Mangoes</li>
+    <li>Guavas</li>
+  </ul>  
+  <script>
+    const val=document.querySelectorAll('.List li');
+    console.log(val);
+    for(let i=0;i<val.length;i++){
+      console.log(val[i].textContent);
+      if(i%2!==0){
+        val[i].classList.add('highlight');
+      }
+    }
+    console.log(val.length);
+  </script>
+</body>
+</html>

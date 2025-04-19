@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COUNTER BUTTON</title>
+    <style>
+        body{
+            text-align: center;
+            /* height: 100vh; */
+            background-color: #f0f0f0;
+        }
+        .btn1, .btn2{
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 5px;
+            color: white;
+            background-color: #007BFF;
+            border: none;
+        }
+        
+    </style>
+   
+</head>
+<body>
+    <div class="counter">
+        Count: 0
+    </div>
+   
+    <button class="btn1">increment</button>
+    <button class="btn2">decrement</button>
+
+    <script>
+        let count = 0;
+        const incrementButton = document.querySelector('.btn1');
+        const decrementButton = document.querySelector('.btn2');
+
+        incrementButton.addEventListener('click', () => {
+            count++;
+            document.querySelector('.counter').textContent = `Count: ${count}`;
+        });
+
+        decrementButton.addEventListener('click', () => {
+            if (count > 0) {
+                count--;
+                document.querySelector('.counter').textContent = `Count: ${count}`;
+            }
+        });
+    </script>
+</body>
+</html>

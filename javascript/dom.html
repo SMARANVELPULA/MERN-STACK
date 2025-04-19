@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <div class="container">
+    <h1>My List</h1>
+    <ul id="myList">
+      <li class="item">Item 1</li>
+      <li class="item">Item 2</li>
+      <li class="item">Item 3</li>
+    </ul>
+    <button id="addButton">Add Item</button>
+  </div>
+  <script>
+    const addButton = document.getElementById('addButton');
+    const listElement = document.getElementById('myList');
+    
+    function removeItem(event) {
+      event.target.remove();
+    }
+    
+    const existingItems = document.querySelectorAll('.item');
+    existingItems.forEach(function(item) {
+      item.addEventListener('click', removeItem);
+    });
+    
+    addButton.addEventListener('click', function() {
+      const newItem = document.createElement('li');
+      newItem.textContent = 'New Item';
+      newItem.className = 'item';
+      newItem.addEventListener('click', removeItem);
+      listElement.appendChild(newItem);
+    });
+  </script>
+</body>
+</html>
