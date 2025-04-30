@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <script>
+             
+                function sumAll(...n){
+                    return n.reduce((sum,num)=>
+                    sum+num,0);
+                }
+                console.log(sumAll(5,9,23,55,62));
+
+                
+                function processArguments(primaryFunction,...args){
+                    return primaryFunction(...args);
+                }
+                function add(m,n){
+                    return m+n;
+                }
+                console.log(processArguments(add,5,23));
+            </script>
+             
+        </body>
+    </head>
+</html>
